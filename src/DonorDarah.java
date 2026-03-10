@@ -12,7 +12,7 @@ public class DonorDarah {
         System.out.print("Masukkan Berat Badan: ");
             double beratBadan = input.nextDouble();
 
-        System.out.print("Masukkan Kadar Hemoglobin (g/dL): ");
+        System.out.print("Masukkan Kadar Hemoglobin: ");
                 double hb = input.nextDouble();
         if (usia >= 17 && usia <= 60) {
 
