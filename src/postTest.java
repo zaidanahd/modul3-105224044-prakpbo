@@ -11,7 +11,7 @@ import java.util.Scanner;
         System.out.println("1. cek saldo");
         System.out.println("2. setor tunai");
         System.out.println("3. tarik tunai");
-        System.out.println(" 4. keluar");
+        System.out.println("4. keluar");
         System.out.println(" masukan pilihan: ");
         menu = input.nextInt();
 
