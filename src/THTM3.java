@@ -6,12 +6,10 @@ public class THTM3 {
 
         Scanner input = new Scanner(System.in);
 
-        // Stok tiket tiap kategori
         int stokVIP = 5;
         int stokFestival = 25;
         int stokTribune = 35;
 
-        // Harga tiket tiap kategori
         int hargaVIP = 1500000;
         int hargaFestival = 800000;
         int hargaTribune = 500000;
@@ -40,23 +38,23 @@ public class THTM3 {
 
             int harga = 0;
             int stok = 0;
-            int minUsia = 0;
+            int minimalUsia = 0;
             String kategori = "";
 
             if (pilihan == 1) {
                 harga = hargaVIP;
                 stok = stokVIP;
-                minUsia = 18;
+                minimalUsia = 18;
                 kategori = "VIP";
             } else if (pilihan == 2) {
                 harga = hargaFestival;
                 stok = stokFestival;
-                minUsia = 15;
+                minimalUsia = 15;
                 kategori = "Festival";
             } else if (pilihan == 3) {
                 harga = hargaTribune;
-                stok = stokTribune;
-                minUsia = 0;
+                stok = stokTribune; 
+                minimalUsia = 0;
                 kategori = "Tribune";
             } else {
                 System.out.println("Menu tidak tersedia.");
@@ -91,7 +89,7 @@ public class THTM3 {
                     usia = input.nextInt();
                 }
 
-                if (usia >= minUsia) {
+                if (usia >= minimalUsia) {
                     System.out.println("Tiket ke-" + i + " berhasil diproses.");
                     tiketBerhasil++;
                     totalBayar += harga;
